@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="BTC,BCH,挖矿,江卓尔," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="加密货币圈内有这样一句玩笑话： 圈内有 99.99% 的人都在抱怨，其中 99% 抱怨自己上车不够早，0.99% 的人抱怨自己下车早了，剩下的 0.01% 成为了传奇人物被人津津乐道。 这虽是一句玩笑话，却很形象地反映了这个圈子的真实情况。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="江卓尔：科普、挖矿，构建可量化、反脆弱的交易系统">
+<meta property="og:url" content="http://bcher.club/2019/08/30/201908301549/index.html">
+<meta property="og:site_name" content="BCHer.Club">
+<meta property="og:description" content="加密货币圈内有这样一句玩笑话： 圈内有 99.99% 的人都在抱怨，其中 99% 抱怨自己上车不够早，0.99% 的人抱怨自己下车早了，剩下的 0.01% 成为了传奇人物被人津津乐道。 这虽是一句玩笑话，却很形象地反映了这个圈子的真实情况。">
+<meta property="og:image" content="http://bcher.club/2019/08/30/201908301549/001.jpg">
+<meta property="og:image" content="http://bcher.club/2019/08/30/201908301549/002.jpg">
+<meta property="og:image" content="http://bcher.club/2019/08/30/201908301549/003.jpg">
+<meta property="og:image" content="http://bcher.club/2019/08/30/201908301549/004.jpg">
+<meta property="og:image" content="http://bcher.club/2019/08/30/201908301549/005.jpg">
+<meta property="og:image" content="http://bcher.club/2019/08/30/201908301549/006.jpg">
+<meta property="og:image" content="http://bcher.club/2019/08/30/201908301549/007.jpg">
+<meta property="og:image" content="http://bcher.club/2019/08/30/201908301549/008.jpg">
+<meta property="og:image" content="http://bcher.club/2019/08/30/201908301549/009.jpg">
+<meta property="og:image" content="http://bcher.club/2019/08/30/201908301549/010.jpg">
+<meta property="article:published_time" content="2019-08-30T06:26:30.000Z">
+<meta property="article:modified_time" content="2019-12-25T07:30:03.752Z">
+<meta property="article:author" content="BCHer">
+<meta property="article:tag" content="BTC">
+<meta property="article:tag" content="BCH">
+<meta property="article:tag" content="挖矿">
+<meta property="article:tag" content="江卓尔">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://bcher.club/2019/08/30/201908301549/001.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://bcher.club/2019/08/30/201908301549/"/>
+
+
+
+
+
+
+
+  <title>江卓尔：科普、挖矿，构建可量化、反脆弱的交易系统 | BCHer.Club</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BCHer.Club</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-message">
+          <a href="/message/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-comment"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+
+
+
+<script>
+    
+    window.onload = function(){
+        var path = 'http://cofi.club'; //����Ҫ�ĳ��㲩�͵ĵ�ַ
+        var localhostItem = String(window.location).split(path)[1];
+        var LiNode = document.querySelectorAll('#menu > li > a')
+        
+        for(var i = 0; i< LiNode.length;i++){
+            var item = String(LiNode[i].href).split(path)[1];
+            if(item == localhostItem && item != undefined){
+                LiNode[i].setAttribute('style','border-bottom:1px solid black');
+            }
+        }
+    };
+
+</script> </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://bcher.club/2019/08/30/201908301549/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="BCHer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BCHer.Club">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">江卓尔：科普、挖矿，构建可量化、反脆弱的交易系统</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-30T14:26:30+08:00">
+                2019-08-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/08/30/201908301549/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/08/30/201908301549/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>加密货币圈内有这样一句玩笑话：</p>
+<p>圈内有 99.99% 的人都在抱怨，其中 99% 抱怨自己上车不够早，0.99% 的人抱怨自己下车早了，剩下的 0.01% 成为了传奇人物被人津津乐道。</p>
+<p>这虽是一句玩笑话，却很形象地反映了这个圈子的真实情况。</p>
+<a id="more"></a>
+
+<p>如果可以选，你觉得选在哪一天参与加密货币可以不抱怨？如果在 2013 年的年底（比特币刚刚经历了大瀑布）进入这个行业，到现在你会成为谁？</p>
+<p>莱比特矿池的创始人江卓尔就是在这个时间点进入了加密货币行业，从最初的两台显卡矿机起步，发展到自有 20 多万台矿机，并创办了全球最大的比特币矿池之一——莱比特矿池（BTC.TOP）。</p>
+<img src="/2019/08/30/201908301549/001.jpg" class="">
+
+<p>5 年多时间，矿机数量上涨 10 万倍，总体收益数千倍，江卓尔是如何做到的呢？是运气还是背后有强大的、值得借鉴的方法论呢？</p>
+<p>今天，我们就来看看江卓尔在加密货币行业快速崛起的传奇历程。</p>
+<p><strong><center> 01 </center></strong><br><strong><center>从大数据到比特币</center></strong></p>
+<p>江卓尔毕业于中国科技大学，获得了计算机和工商管理学双学位。作为一名程序员，他毕业以后在上海移动做数据仓库和大数据分析。</p>
+<p>“用大数据看人，就像人看蚂蚁一样”的理念，以及大数据分析的专业知识，为江卓尔之后投资加密货币提供了极其有效的指导。</p>
+<p>江卓尔第一次听到比特币是在 2011 年，和很多人一样，最初听到并没有把它当回事，等再次听到的时候基本都是比特币下一次快速上涨的时候。比特币再一次进入江卓尔的视野是在  2013 年，那时候他还在上海活动，带领十几个人的团队做大数据分析。这一次，他没有再错过机会，而是认准了比特币是未来的一个趋势。</p>
+<p>2013 年 10 月，江卓尔毅然辞职，从两台显卡矿机起步，从挖莱特币（LTC）等山寨币开始，经过 4~5 年的时间，缔造了一个矿业巨头。</p>
+<p><strong><center> 02 </center></strong><br><strong><center>科普</center></strong></p>
+<p>对自己在区块链行业做的事情，江卓尔总结为两点：科普和挖矿。</p>
+<p>作为业内的 KOL，江卓尔在知乎上写的科普长文《比特币是什么》，是中文社区中最广为流传的比特币科普文章，浏览量近 600 万次，是很多人入门区块链的必读文章，甚至还有不少区块链公司拿它作为新员工入职培训教材。</p>
+<img src="/2019/08/30/201908301549/002.jpg" class="">
+
+<p> 除了知乎这篇爆款，江卓尔在微博平台上发布了很多区块链行业的热点解读文章。比如[BCH 与 BSV 算力战之际写的《天下大义当混为一》上、中、下系列，累计阅读量达到 50w+。 </p>
+<img src="/2019/08/30/201908301549/003.jpg" class="">
+
+<p>江卓尔的文章能得到读者的如此偏爱，根本原因还是他对区块链、比特币的深刻理解。</p>
+<p><strong><center> 03 </center></strong><br><strong><center>挖矿三重门</center></strong></p>
+<p>除了科普，江卓尔的另一个标签就是挖矿，挖矿是江卓尔在区块链行业的最大业务。</p>
+<p>江卓尔创办的莱比特币矿池是全球头部比特币矿池之一，而这一切起源于 2013 年底的两台显卡矿机。2013 年 12 月 10 日，江卓尔买了两台 7950 五卡的显卡矿机，彼时，比特币 11 月 19 日达到 8000 元泡沫高峰，莱特币 11 月 28 日达到 380 元泡沫高峰后，迅速崩盘，很多人因此萌生退意。江卓尔买矿机在当时是逆趋势而动，但他有着自己反脆弱的投资逻辑：“崩盘后显卡矿机价格大跌，离显卡的正常价格不远，即使挖矿上不赚钱，也能把显卡卖掉，大亏概率不大”。</p>
+<p>在用两台显卡矿机挖高收益山寨币初尝甜头后，江卓尔意识到要迅速扩大算力，矿池是最快的途径，于是在 12  月组建了团队，着手建立矿池，2014 年 1 月 1 日注册了莱比特矿池域名，并在短时间内完成了矿池的开发上线，于2014 年 1 月 4  日汇出矿池的第一笔付款——此时距江卓尔第一次购买矿机，还不到一个月。</p>
+<p>成立之初的莱比特矿池定位机枪池，会根据挖矿难度、出块奖励、市场价格、市场深度和成熟时间等为参数，以秒为单位，寻找收益最高的 Token 并自动切换一部分算力到上面进行挖矿，同时还通过联合挖矿等方式进一步提高收益。</p>
+<p>莱比特矿池通过“机枪池”策略挖山寨币提供了远超过理论收益的产出。矿池成立之初，7 日分红收益高达 40% 以上，很快在 LTC 算法和 X11 算法上占据了世界领先的位置。在整个漫长的 2014~2015 熊市中，江卓尔坚定地长期看好比特币，并通过挖山寨币然后换成比特币的方式，把所有的利润都转换为比特币囤积起来。</p>
+<p>在 2015 年 10 月，发生了两件事，一是在漫长无聊的熊市中，江卓尔花了一个月的时间，在知乎上写完了长达6万字的著名科普《比特币是什么》（文章快捷网址：WhatisBTC.com），并预言随着比特币活跃地址数的持续增加，牛市即将到来。</p>
+<p>二是比特币的扩容之争，从比特币开发人员内部，扩散到整个社区都参与争论，这让江卓尔意识到“想要保护自己的比特币，必须要有比特币算力”。于是，在 2016 年初，江卓尔建立了自己的比特币矿池——BTC.TOP。在 2017 年牛市末期，BTC.TOP 还一度成为全网算力最大的矿池。这是挖矿之于江卓尔的第一重意义：用算力守护自己的财产。</p>
+<p>2017 年“九四”期间和 2018 年底的矿难期间，很多矿场关停，矿机论斤卖，恐慌情绪在整个挖矿行业蔓延。出人意料的是，江卓尔却在这个时间点大量抄底市场上被贱卖的矿机。江卓尔在业内还有个“矿机黑洞”的外号，因为他从来只大量买矿机，而没有卖出哪怕是一台矿机。</p>
+<p>江卓尔的逻辑是：“对区块链和比特币长期看好，买了矿机就老老实实挖到报废，把长期的超额回报从鱼头吃到鱼尾，没必要做短线的折腾”。而比特币屡屡的“带鱼行情（超过市场预期的长期持续上涨）”，也让长持矿机的人赚得盆满钵满，让短线玩波段的人后悔不迭。</p>
+<p>通过矿业，江卓尔构建了以币为核心的业务体系。在区块链市场上，很多人看似赚了钱，但却是以法币计价赚钱，在百倍的币价涨幅面前，资产折合比特币缩水严重，业内影响力越来越小。只有构建以币为核心的业务体系，才能确保不被百倍的币价涨幅甩下车。这是挖矿之于江卓尔的第二重意义：构建以币为核心的业务体系，让自己永远不会被甩下车。</p>
+<p>依靠大规模的算力，江卓尔坚定地执行中本聪在区块扩容上的计划，并在 BCH 分叉、澳本聪威胁攻击 BCH 等几个关键节点上，发挥了重要作用。</p>
+<p>这是挖矿之于江卓尔的第三重意义：用算力为自己的理念投票。</p>
+<p><strong><center> 04</center></strong><br><strong><center>超越数学模型的交易理论</center></strong></p>
+<p>江卓尔能在短短几年时间内获得数千倍的收益，直接原因是多次成功的逃顶和抄底，江卓尔称之为<strong>“投资之术”</strong>。江卓尔对大趋势的判断有自己的方法论，而且敢于为自己的判断下注。</p>
+<p>以下是针对江卓尔的趋势判断方法以及交易系统的访谈，需要注意的是，他的方法并不适用于每一个人，以前奏效不代表未来也奏效，任何人都需要独立思考。</p>
+<p><strong>1、交易理论 1.0：可量化的交易系统</strong></p>
+<p>白话区块链：江总，我记得您不太喜欢谈短期币价涨跌，能给我们讲讲为什么吗？</p>
+<p>江卓尔：价格短期问上帝，长期看用户数。对币价的判断，应该看大周期和大趋势，建立可量化的数学模型，然后通过超长线的操作，避开币价短期波动的风险。例如，在《比特币是什么》的科普长文中，我对 2015 年后续牛市的坚定信念，就来自于比特币活跃地址数的持续稳定增加。</p>
+<img src="/2019/08/30/201908301549/004.jpg" class="">
+
+<p>而我对比特币扩容，和BCH的坚定支持，也是基于 “不扩容（拥堵）阻碍比特币用户数增加” 的坚实逻辑。</p>
+<p>白话区块链：短期价格问上帝，这也吻合了随机漫步理论（Random Walk Theory，认为证券价格的波动是随机的、没有规律的）。但您成功地预测了这轮熊市的 3000 美元大底，能介绍一下如何做到的吗？</p>
+<p>江卓尔：币价的短期波动无法预测，但长期的周期还是可以预测的，比特币以 4 年减半为周期，形成了长期相似的波动。并且比特币总市值越大，波动率越小，所以就存在“计算底部”的可行性。</p>
+<img src="/2019/08/30/201908301549/005.jpg" class="">
+
+<p>2014 年泡沫顶部总市值比上一轮 2011 年增加 93.1 倍，2017 年比 2014 年增加  25.6 倍，对应的2014 年最大跌幅比2011年减少 6.86%，因此等比例可计算出，2017年跌幅应该减少 1.88%，由此计算出  2017 年最大跌幅 85%，对应币价 2981美元，这又正好接近 3000 美元的整数心理关口，因此，我预测底部是 3000 美元，最后实际底部是 3122 美元，较为接近。</p>
+<img src="/2019/08/30/201908301549/006.jpg" class="">
+
+<p>白话区块链：除了靠周期计算抄底，您还在 2017 年顶部成功逃顶，你说过逃顶比抄底更难，那是怎么做到的，今天能给我们介绍下吗？</p>
+<p>江卓尔：逃顶主要靠观察市场情绪，以及计算泡沫指数。我常用的有三个泡沫指数：</p>
+<ul>
+<li><p><strong>“用户泡沫指数”</strong></p>
+</li>
+<li><p><strong>“涨幅泡沫指数”</strong></p>
+</li>
+<li><p><strong>“矿机泡沫指数”</strong></p>
+</li>
+</ul>
+<p>我设计的第一个泡沫指数是“用户泡沫指数”，计算方法是“总市值”除以“比特币活跃地址数”的根号二次方。这个指数的底层逻辑是梅特卡夫定律，即网络的价值和联网用户数的平方成正比。</p>
+<p>在这个模型中，如果币价持续上涨，而用户数却长期没有跟上，根据梅特卡夫定律，这样的网络价值是没有实际用户支撑的，泡沫就出现了。</p>
+<img src="/2019/08/30/201908301549/007.jpg" class="">
+
+<p>▲ 蓝色是比特币的总市值，单位是 100 亿；橙色线是比特币的活跃地址，以 10 万为单位。泡沫指数就是把总市值除以活跃地址的根号二次方。</p>
+<p>需要特别说明的是，这个指标现在已经失效了。因为新增 BTC 的区块大小被锁死在 1 M 大小，每个区块能打包的交易上限在 4000 笔左右，活跃地址数已经无法反映出BTC的用户数。</p>
+<p>我设计的第二个泡沫指数是“涨幅泡沫指数，方法是计算比特币 60 日累计涨幅，把最近60天每一天的涨幅相加得到（不是用第 60 日的价格除以第一天的价格）。</p>
+<p> 这个指标的逻辑是：熊市是牛市制造的，币价上涨需要持续的新人、新入场资金来支撑，新进资金一般是随着新闻和牛市致富效应的扩散而稳定流入，但如果市场狂热到一定程度，市场存量用户穷尽一切资金、甚至大幅加入杠杆投入，那价格短期大幅上涨，速度就超过了新资金的入场速度。新进资金无法撑住过快上涨的价格，币价最终会在一个很高的位置，带着巨大的势能崩下来，结束牛市、开启熊市。</p>
+<img src="/2019/08/30/201908301549/008.jpg" class="">
+
+<p>在 2011 年和 2013 年的三次崩盘前，都出现了 60 日涨幅达到 300% ~ 200% 的情况。2017年底崩盘前，也出现了 60 日涨幅达到 120% 的巅峰。</p>
+<p>我设计的第三个泡沫指数是“矿机泡沫指数”，计算方法是矿机的静态回本天数（矿机价格除以每天净收益）。如果多数主流矿机的回本天数大幅下降，就是见顶信号。这个指标的逻辑是如果工业化生产矿机的速度都远远赶不上币价上涨的速度，那么说明币价上涨太快，难以为继。</p>
+<img src="/2019/08/30/201908301549/009.jpg" class="">
+
+<p> 从上图中，我们可以看到，2016<del>2017 年牛市期间，S9 的静态回本周期稳定在 200</del>250 天，每天利润稳定在 5 元。但在 2017 年 12 月，S9 的回本周期快速下降到 100 天附近，每天的利润从 5 元飙升到 20 元，这就是出现了明显的矿机泡沫指数。 </p>
+<p>需要说明的是，这三个泡沫指数需要综合参考，并结合市场情绪做判断，而且即使综合参考了这些情况，依然很难做到准确逃顶，这些指标最重要的意义，是让我们知道现在大概处于大周期的哪一个阶段。</p>
+<p> 大周期计算和三大泡沫指数，是我交易理论 1.0 的内容，更侧重于获取最高利润，我也靠这些方法，获得了超过币价涨幅的超额收益，但这些方法对风险的控制不足，因此现在我更多谈的是添加了不少内容的 2.0 交易理论。 </p>
+<p> <strong>2、交易系统 2.0：反脆弱的交易理论</strong> </p>
+<p>白话区块链：江总，相比于交易系统 1.0，2.0 的主要特点是什么呢？</p>
+<p>江卓尔：交易理论 2.0 核心在于反脆弱性。反脆弱性指的是：在黑天鹅事件发生后，如果你是获利的一方，那么你就是具有反脆弱性的；反之，你就是脆弱的。在加密货币行业，黑天鹅频繁出没，因此特别需要让自己具有反脆弱性，否则不管你之前赚了多少，都有可能一轮归零。</p>
+<p>白话区块链：江总，您是如何让自己的交易系统具有反脆弱性？</p>
+<p>江卓尔：在上次和你们白话区块链的直播中，我提到过“轻判断，重风控”。面对不确定的未来，在通过趋势判断来获取利润的同时，要同时考虑到，如果自己的判断错了，是否有对冲错误的手段？加密货币市场自带黑天鹅体质，黑天鹅层出不穷，几乎成了黑天鹅湖，要做到永远判断正确，几乎不可能。</p>
+<p>我就有过典型的反面例子：我从进入区块链市场以来，在2018年中之前，几乎做对了所有的预测和判断，并屡屡通过重仓押注，获得了超额的收益，但我之后经历了一次严重的判断错误和损失。</p>
+<p>2018 年虽然进入了熊市，但包括我在内的很多大区块派，都还是重仓持有BCH。就像我在 2014-2015 年不管币价如何下跌，都持续地将利润都转为 BTC 囤积起来一样，2018 年我也持续地囤积 BCH，并且我预测，在矿业资金注入，和大量大区块派坚定的支持下，BCH 即使在熊市，也能维持住一定的价格，但是之后出现了黑天鹅——澳本聪分裂 BCH。</p>
+<p>这只黑天鹅几乎是个人意志的作用，因此是不可预测的，本质上还是因为 BCH社区处于早期阶段，体量太小，以至于受到了某个小集团的巨大影响。澳本聪分裂 BCH 的结果，是市场对 BCH 信心大幅下降，BCH 出现了巨幅下跌，也导致了我的巨大损失，究其原因，还是因为我没有做到反脆弱性。</p>
+<p>另外一个理论补充，我称之为“盖泉眼理论”。盖泉眼不是说要布局更多的赛道，以免错过投资机会，而是要发现并覆盖所有新的经济自由。价值发现是多维的，但究其本质，只有新的经济自由才有巨大的投资价值。</p>
+<p>举个例子，比特币带来了货币自由，以太坊带来了股权自由，它们是价值的泉眼，而像交易平台、矿业这些看起来很赚钱的行业，实际上只是在分泉眼流出来的小部分利润。而我们的投资，要保证能覆盖住所有带来新经济自由的币种。在未来可以预期的经济自由，有法币自由（稳定法币，投资能容纳天量代币用户的去中心化公链）、信息自由（去中心化存储）等等。</p>
+<p><strong>目前我的仓位是 4321：40%的 BCH，30%的 BTC，20%的 ETH，10%的创新币种。</strong></p>
+<p>40% 的BCH——我虽然长期看好大区块比特币（BCH），看空 BTC 拥堵带来的负面影响，但我不会再只屯 BCH。由于 BTC 经过一个周期，依然没能解决拥堵问题，因此可以预期在牛市开始后，BTC 严重的拥堵依然会和上一个周期一样，持续地为BCH注入关注度和资金，使得 BCH 在牛市顶部对 BTC 的价格，显著高于现在的 3%。</p>
+<p>30% 的 BTC——如前文所述，是为了对冲 BCH 的意外失败风险，另外我持有的大量矿机，也是对这一风险的对冲，不管 BTC 和 BCH 哪个涨，或者一起涨，矿机都将分润收益。</p>
+<p>20% 的  ETH——ETH在发行代币上的完善生态和规模效应，依然无人能比。ETH目前面临的同样也是拥堵问题，Vitalik准备用分片来做容量扩展。如果ETH扩容不成，那对代币发行的需求（例如亿级别用户的稳定法币）将落入其它有扩展性的公链上——例如同样可以发行代币，又有大区块的 BCH。</p>
+<p>10% 的创新币种——例如能带来信息自由的去中心化存储（但 IPFS 的开发完成依然遥遥无期），例如剑走偏锋，通过牺牲去中心化来获得更高 TPS 的 EOS，等等。</p>
+<p>当然了，这个行业在不断地发展，我的认知水平也在升级，我个人的交易系统也会不断更新升级，这个世界不存在完美的、不需要迭代的交易系统。</p>
+<p><strong><center> 05</center></strong><br><strong><center>万物速朽，进化永恒</center></strong></p>
+<p>在区块链的世界里，不少人喜欢说“信仰”。</p>
+<p>江卓尔的观点与众不同，他更愿意用进化的眼光看待区块链的发展。在比特币扩容之争出现分歧的时候，江卓尔用真金白银构建的比特币算力，投票给自己认可的演化方向——用算力支持比特币扩容，为比特币演化方向创造一种可能性。</p>
+<p>如果借鉴互联网发展历史来看，发展了 20 多年的互联网行业，如今的排头兵早已不是当年的领航者，所以也许再过一些时间，比特币也不会是现在的模样，比特币也未必会永远存在，但区块链在很长时间都会存在，区块链可能会演化出一棵庞大的进化之树，充满各种各样的可能性。</p>
+<img src="/2019/08/30/201908301549/010.jpg" class="">
+
+<p>比特币，多一种选择，多一份自由；区块链，一个孕育自由的系统！</p>
+<p> 原文链接：<a href="https://card.weibo.com/article/m/show/id/2309404411014899695739?_wb_client_=1" target="_blank" rel="noopener">白话区块链</a> </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/BTC/" rel="tag"># BTC</a>
+          
+            <a href="/tags/BCH/" rel="tag"># BCH</a>
+          
+            <a href="/tags/%E6%8C%96%E7%9F%BF/" rel="tag"># 挖矿</a>
+          
+            <a href="/tags/%E6%B1%9F%E5%8D%93%E5%B0%94/" rel="tag"># 江卓尔</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/02/201912021807/" rel="prev" title="Bitcoin.com宣布将成立2亿美元的BCH生态系统投资基金">
+                Bitcoin.com宣布将成立2亿美元的BCH生态系统投资基金 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments"> 
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/touxiang.jpg"
+                alt="BCHer" />
+            
+              <p class="site-author-name" itemprop="name">BCHer</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        ﻿<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">BCHer</span>
+
+  
+</div>
+<!--
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动
+-->
+</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">
+<!--
+主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4
+
+-->
+</div>
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'Wyx0ixnswAdTW50g6IigFS7w-gzGzoHsz',
+        appKey: 'claLTxtyqG7qT9AbtKQVFvQX',
+        placeholder: 'hi',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+//�����������д���ȥ�� power by valine
+ var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
+
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
