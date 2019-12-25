@@ -279,147 +279,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://bcher.club/2019/12/25/201912101441/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="BCHer">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/touxiang.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="BCHer.Club">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/12/25/201912101441/" itemprop="url">10分钟出一个块的BCH，可以作为日常支付？</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-25T11:16:48+08:00">
-                2019-12-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2019/12/25/201912101441/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/12/25/201912101441/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>中本聪创建比特币的初衷是希望其成为全球支付的货币，作为继承中本聪衣钵的比特币现金更是在这方面不断的努力。比特币平均10分钟出一个块，交易确认的时间也是10分钟左右。10分钟的支付确认时间对于日常支付来说就是个笑话，这也是比特币在支付方面被诟病的一个重要原因。</p>
-<p>当年，中本聪创建比特币的时候出于安全的考虑把比特币出块时间设定为10分钟，这也为比特币后来在支付方向四处碰壁埋下了隐患，后来比特币CORE开发团队出于安全的考虑把零确认扼杀在了摇篮里（通过BCH上的实验证明零确认也是相对安全的），希望通过闪电网络来解决比特币支付确认时间慢的问题，但事实证明被社区寄予厚望的闪电网络存在一定的技术漏洞，并未被社区广泛的接受，在四处碰壁后转变了自己的发展思路。当然，小区块容量不足也让比特币离支付越来越远。 </p>
-<p>比特币现金作为比特币的孪生兄弟，是通过社区共识而诞生的，继承了比特币大部分的代码和功能，在支付方面也是做出了各种努力。例如，采用大区块，增加了交易的容量，不至于拥堵。有人还提出缩短出块时间，随未被采纳，但也是一种不错的建议。另外，也尝试了各种零确认方案，但都不是特别的理想，社区接受度不高。不过，BCH在5月份部署的雪崩（Avalanche）共识协议却在社区内掀起了轩然大波，被寄予厚望，即使是BCH的反对者也是好评如潮。理论上雪崩协议可以让BCH交易确认的时间缩短为2-3秒，这项技术可以让BCH比肩支付宝，微信支付等支付方式的用户体验。</p>
-<p><strong>雪崩Avalanche**</strong>共识<strong>**协议</strong></p>
-<p>BCH的预确认（雪崩Avalanche协议）类似DPOS，由矿池按算力比例做节点，几秒就可确认，然后由确认的（大多数矿池算力）确保打包进区块里。Avalanche最擅长的是它以可靠的方式达成共识的速度。这意味着只要网络中连接了正确的节点，这个共识在以后不会改变。Avalanche共识协议可以使得比特币现金的交易变得几乎即时，2-3秒即可确认交易。除此之外，Avalanche共识协议还可以改善mempool同步并减少51％攻击的经济激励。</p>
-<p><strong>雪崩协议的工作原理</strong></p>
-<p>雪崩Avalanche协议旨在倾向于选择两个选项中的一个，核心理念依赖于抽样投票。如果一个网络中有一些不可信的节点，它们希望在两种颜色(比如蓝色或红色)之间进行选择。网络中的一个节点会随机选择一些节点，并向它们提出问题。被选择为样本组一部分的节点将用它们选择的颜色向提问节点返回一个答案。使用来自样本组的响应，提问节点将看到网络正倾向于某种颜色。随后，网络中的每个节点都经历同样的过程，从而在网络内部达成共识。</p>
-<p>该协议可以被描述为一个循环的次抽样投票过程。在样本组中，第一轮投票后颜色之间出现平局的情况下，第二轮投票将以指数形式降低再次出现平局的概率。此外，此后的每一轮投票都会越来越减少平局的几率。</p>
-<p>回到颜色选择示例，随着每一轮投票，网络将开始看到节点倾向于哪个颜色的模式。随着每一轮投票的进行，网络得出这一结论的速度都比前一轮快。在某一阈值下，网络达到其最终状态，所有节点都决定了一种颜色</p>
-<p><strong>总结</strong></p>
-<p>雪崩协议作为BCH新一代共识协议，可以把交易确认的时间大大的缩短至2-3秒，对于用户的支付体验来来说是一个质的飞跃，让BCH走向千家万户的日常支付成为可能。</p>
-<p>原文链接：<a href="https://bch.club/index.php?app=team&mod=Forum&act=detail&topic_id=1363&team_id=1" target="_blank" rel="noopener">10分钟出一个块的BCH，可以作为日常支付？</a>             </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://bcher.club/2019/12/11/201912111429/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -504,6 +363,140 @@
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/12/11/201912111429/" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://bcher.club/2019/12/10/201912101441/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="BCHer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BCHer.Club">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/10/201912101441/" itemprop="url">10分钟出一个块的BCH，可以作为日常支付？</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-10T11:16:48+08:00">
+                2019-12-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/12/10/201912101441/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/12/10/201912101441/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>中本聪创建比特币的初衷是希望其成为全球支付的货币，作为继承中本聪衣钵的比特币现金更是在这方面不断的努力。比特币平均10分钟出一个块，交易确认的时间也是10分钟左右。10分钟的支付确认时间对于日常支付来说就是个笑话，这也是比特币在支付方面被诟病的一个重要原因。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/10/201912101441/" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
