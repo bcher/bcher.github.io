@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="BCH," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="摘要  比特币现金（BitcoinCash）与比特币相同，是一种基于去中心化，采用点对点网络与共识主动性，开放源代码，以区块链作为底层技术的加密货货币。比特币社区围绕扩容问题争论了三年之久，终于在2017年8月1日，比特币现金在区块高度478558执行硬分叉，按照比特币1：1分发，总量2100万，删除隔离见证、区块上限升级为8M，后升级为32M，通过链上扩容解决了旧版比特币系统中手续费高、确认慢、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一文读懂比特币现金（BCH）">
+<meta property="og:url" content="http://bcher.club/2019/05/20/201905200838/index.html">
+<meta property="og:site_name" content="BCHer.Club">
+<meta property="og:description" content="摘要  比特币现金（BitcoinCash）与比特币相同，是一种基于去中心化，采用点对点网络与共识主动性，开放源代码，以区块链作为底层技术的加密货货币。比特币社区围绕扩容问题争论了三年之久，终于在2017年8月1日，比特币现金在区块高度478558执行硬分叉，按照比特币1：1分发，总量2100万，删除隔离见证、区块上限升级为8M，后升级为32M，通过链上扩容解决了旧版比特币系统中手续费高、确认慢、">
+<meta property="article:published_time" content="2019-05-20T00:38:30.000Z">
+<meta property="article:modified_time" content="2019-12-30T01:27:38.641Z">
+<meta property="article:author" content="BCHer">
+<meta property="article:tag" content="BCH">
+<meta name="twitter:card" content="summary">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://bcher.club/2019/05/20/201905200838/"/>
+
+
+
+
+
+
+
+  <title>一文读懂比特币现金（BCH） | BCHer.Club</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">BCHer.Club</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-message">
+          <a href="/message/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-comment"></i> <br />
+            
+            留言
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+
+
+
+<script>
+    
+    window.onload = function(){
+        var path = 'http://cofi.club'; //����Ҫ�ĳ��㲩�͵ĵ�ַ
+        var localhostItem = String(window.location).split(path)[1];
+        var LiNode = document.querySelectorAll('#menu > li > a')
+        
+        for(var i = 0; i< LiNode.length;i++){
+            var item = String(LiNode[i].href).split(path)[1];
+            if(item == localhostItem && item != undefined){
+                LiNode[i].setAttribute('style','border-bottom:1px solid black');
+            }
+        }
+    };
+
+</script> </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://bcher.club/2019/05/20/201905200838/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="BCHer">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="BCHer.Club">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">一文读懂比特币现金（BCH）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-20T08:38:30+08:00">
+                2019-05-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/05/20/201905200838/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/05/20/201905200838/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong>摘要</strong></p>
+<hr>
+<p>比特币现金（BitcoinCash）与比特币相同，是一种基于去中心化，采用点对点网络与共识主动性，开放源代码，以区块链作为底层技术的加密货货币。比特币社区围绕扩容问题争论了三年之久，终于在2017年8月1日，比特币现金在区块高度478558执行硬分叉，按照比特币1：1分发，总量2100万，删除隔离见证、区块上限升级为8M，后升级为32M，通过链上扩容解决了旧版比特币系统中手续费高、确认慢、实用性差等问题，履行比特币作为「点对点电子现金」的承诺。目前比特币现金由多个不同的开发团队维护，市值曾达到第二名，更多商家正在接受BCH付款，多家交易所支持BCH定价。</p>
+<a id="more"></a>
+
+<p>比特币现金注重密码货币的用户体验和市场需求，将会提供越来越安全、便捷、低成本的支付手段，并以此为基础，获得更加持久稳健的投资、储值和结算功能。</p>
+<p><strong>特点</strong></p>
+<hr>
+<p><strong>去中心化</strong></p>
+<p>比特币现金网络由全体比特币现金用户共同控制，除非绝大部分比特币用户一致同意做出某个改变（例如规则修改或版本升级），否则任何人或组织都无法改变或停止比特币现金运行。</p>
+<p>比特币现金作为互联网货币，只要有网络的地方，都可以像收发电子邮件一样，极低成本地收发比特币现金。您可以每年365天，每天24小时向全球各地的任何人汇款。与互联网一样，比特币现金网络全年无休。交易金额不分大小，再也不需要任何人授权或批准了。</p>
+<p><strong>匿名</strong></p>
+<p>比特币现金比银行转账与信用卡付款之类的传统支付方式更加私密，匿名性也更好，因为一般无法知道是谁控制了比特币地址。</p>
+<p><strong>固定上限</strong></p>
+<p>比特币现金协议保证绝不会有超过2100万的比特币存在。政府持续印刷货币，无休止地超额供应，让每个人的存款贬值。比特币现金是定量供应的，因此是一种健全的货币。</p>
+<p><strong>智能合约</strong></p>
+<p>比特币现金是一种可编程的货币，可以在货币的基础上实现智能合约。可编程的经济将能显著解决经济运行中的透明和可信问题，降低社会运行成本。</p>
+<p><strong>支持者</strong></p>
+<hr>
+<p><strong>Gavin Andresen</strong></p>
+<p>前BitcoinCore首席开发者，他自2016年2月起对比特币核心做出贡献，也曾多次为比特币扩容作出努力。2016年5月，他在GitHub上的访问权限被撤销。</p>
+<p><strong>吴忌寒</strong></p>
+<p>2013年联合创办了比特大陆，担任联席董事会主席兼联席首席执行官。如今的比特大陆已经是区块链行业估值最高的公司，2017年的芯片出货量仅次于华为海思，仅用四年的时间就超越了英伟达24年才实现的年营业利润。</p>
+<p><strong>Roger Ver</strong></p>
+<p>人称比特币耶稣，比特币相关初创公司的早期投资者，Bitcoin.com创始人，Bitcoin.com提供钱包、咨询、矿池等业务。他创办的Memorydealers是第一个接受比特币付款的公司。</p>
+<p><strong>杨海坡</strong></p>
+<p>ViaBTC/CoinEx创始人，曾就职于腾讯。ViaBTC作为首个挖出BCH区块的矿池，长期稳居比特币全网算力前三的水平，CoinEx也是首个宣布以BCH定价的交易平台。</p>
+<p><strong>江卓尔</strong></p>
+<p>莱比特矿池（BTC.top）创始人，莱比特矿池长期稳居比特币全网算力前五的水平。创始人江卓尔也是著名的比特币科普者，比特币投资者。</p>
+<p><strong>参与开发</strong></p>
+<hr>
+<p><strong>BitcoinABC</strong></p>
+<p>BitcoinABC是比特币现金第一支开发团队，在Bitcoinunlimited扩容失败后承担了BCH节点客户端的开发任务。BitcoinABC提供稳定的软件，并通过开放和协作的流程帮助领导比特币现金协议开发。</p>
+<p>官网：<a href="https://www.bitcoinabc.org" target="_blank" rel="noopener">https://www.bitcoinabc.org</a></p>
+<p><strong>Bitcoinunlimited</strong></p>
+<p>比特币无限组织以相同的名称维护开源比特币现金客户端。该组织的任务是：促进比特币协议的竞争实施，以便为节点运营商提供更多选择并增加网络的稳健性。支持比特币作为对等电子现金系统的持续增长和采用，如Satoshi Nakamoto的白皮书所述。</p>
+<p>官网：<a href="https://www.bitcoinunlimited.info" target="_blank" rel="noopener">https://www.bitcoinunlimited.info</a></p>
+<p><strong>哥白尼copernicus</strong></p>
+<p>哥白尼项目提供给大家一个Go语言版本的Bitcoin Cash客户端，并对原来的客户端软件结构做了重新梳理和设计，期望结构简洁，降低后面开发者进入时的学习成本，增加客户端多样性以此来保证整个Bitcoin Cash网络的安全。</p>
+<p>官网：<a href="https://copernet.io" target="_blank" rel="noopener">https://copernet.io</a></p>
+<p><strong>BitcoinXT</strong></p>
+<p>BitcoinXT是比特币现金（BCH）的完整节点实现。BitcoinXT起源于BitcoinCore，由Gavin Andresen和Mike Hearn建立，现在是一个独立维护的软件分支。</p>
+<p>官网：<a href="https://bitcoinxt.software" target="_blank" rel="noopener">https://bitcoinxt.software</a></p>
+<p><strong>Parity</strong></p>
+<p>Parity是世界上最成功的区块链公司之一，完全使用快速安全的Rust语言构建比特币的开源客户端，可确保您的节点或采矿设备保持正常运行。</p>
+<p>官网：<a href="https://www.parity.io/bitcoin/" target="_blank" rel="noopener">https://www.parity.io/bitcoin/</a></p>
+<p><strong>Bitprim</strong></p>
+<p>Bitprim总部位于阿根廷，专注于透明度、专业度、客户服务以及与BitcoinABC合作，以改善比特币现金的发展。</p>
+<p>官网：<a href="https://www.bitprim.org/" target="_blank" rel="noopener">https://www.bitprim.org/</a></p>
+<p><strong>Bcash</strong></p>
+<p>Bcoin是一个使用ja vascript / NodeJS构建的高级全节点实现。与竞争实施相比，它更易于使用，学习更快，记录更完善。</p>
+<p>官网：<a href="https://bcoin.io/" target="_blank" rel="noopener">https://bcoin.io/</a></p>
+<p><strong>BCHD</strong></p>
+<p>BCHD则是由Openbazaar开发人员Chris Pacia推出的使用GO语言编写的BCH全节点客户端，是将BTCD移植到BCH上。</p>
+<p>官网：<a href="https://bchd.cash/" target="_blank" rel="noopener">https://bchd.cash/</a></p>
+<p><strong>Bitcoinpython</strong></p>
+<p>BCH开发者Corentin Mercier用Python编写的BCH快速节点，一个强大的API、符合所有BCH改进协议、适用于所有主要的平台、有着大量的文档以及比之前的Python库快100倍。</p>
+<p>官网：<a href="https://github.com/merc1er/bitcoinpythonFlowee" target="_blank" rel="noopener">https://github.com/merc1er/bitcoinpythonFlowee</a></p>
+<p><strong>Flowee</strong></p>
+<p>BCH开发者TomZander认为当前BCH的UTXO数据库低效，导致同步验证速度缓慢。于是他重新开发了一款专门的UTXO数据库以解决这个问题。Flowee的特性并不只是重构了UTXO数据库，它的API也很强大。</p>
+<p>官网：<a href="https://flowee.org/" target="_blank" rel="noopener">https://flowee.org/</a></p>
+<p><strong>以上仅包含官网推荐的节点开发团队，具体团队数量不可考。</strong></p>
+<p><strong>智能合约方案</strong></p>
+<hr>
+<p><strong>虫洞协议</strong></p>
+<p>Wormhole Cash是基于BitcoinCash区块链实现的，依附于Bitcoin Cash区块链，在不改变现有BCH共识规则的情况下，Fork了Omni la yer的协议，在Bitcoin Cash的区块链上实 现了发⾏通证的技术⽅案。使得BCH区块链实现通证的发⾏、转移和燃烧等基本功能。</p>
+<p>网站：<a href="http://wormhole.cash/" target="_blank" rel="noopener">http://wormhole.cash/</a></p>
+<p><strong>SLP（SimpleLedger Protocol）</strong></p>
+<p>该协议由Jonald Fyookball（Electron Cash钱包开发者、ChainBet协议撰写者）， James Cramer，Unwriter（bitdb.network开发者），Mark B. Lundeberg， Calin Culianu，Ryan X. Charles（Yours.org CEO）共同撰写。</p>
+<p>SLP的基本原理比较简单，就是把token的发行和转账等信息写入OP_RETURN中，携带在BCH转账中来实现token在不同地址间的转移。</p>
+<p>网站：<a href="https://github.com/simpleledger" target="_blank" rel="noopener">https://github.com/simpleledger</a></p>
+<p><strong>Keoken</strong></p>
+<p>Keoken是第二层解决方案，涉及数字会计资产和安全智能合约平台。该项目受到多个先前存在的项目的影响，如BitcoinCash，Omni / Mastercoin，RSK / Ethereum，Decred，Dash，CounterParty，EOS等，但它是利用Bitprim-Node高级功能从头开始构建的。</p>
+<p>网站：<a href="https://keoken.io/" target="_blank" rel="noopener">https://keoken.io/</a></p>
+<p><strong>ORBIT</strong></p>
+<p>ORBIT是一个简单的可替换令牌的规范，它通过利用OP_RETURN在比特币现金区块链上存储令牌事件来实现。不需要更改比特币现金协议或节点。但是，钱包可能希望合并此令牌标准，以便用户能够轻松地考虑并与符合此ORBIT标准的令牌进行交互。</p>
+<p>网站：<a href="https://orbit.cash/" target="_blank" rel="noopener">https://orbit.cash/</a></p>
+<p><strong>彩色硬币</strong></p>
+<p>彩色硬币项目始于2013年，是比特币（现金）数字代币的框架。 彩色硬币可以代表代金券，优惠券，代币，山寨币或其他资产。你可以将任何你想要的东西标记。</p>
+<p>网站：<a href="https://cryptonized.cash/" target="_blank" rel="noopener">https://cryptonized.cash/</a></p>
+<p><strong>Counterparty</strong></p>
+<p>Counterparty是一个开源协议，启动之前在传统的比特币网络上进行了4年（2014年-2018年）的广泛测试。Counterparty允许任何人在比特币区块链上承销资产并发行金融工具和非金融代币，票务，许可和赎回权等等。</p>
+<p>网站：<a href="https://counterparty.cash/" target="_blank" rel="noopener">https://counterparty.cash/</a></p>
+<p><strong>除了上述智能合约方案，还有Tokeda、Recursive Smelting等方案。</strong></p>
+<p><strong>发展历程</strong></p>
+<hr>
+<p><strong>2010年10月 比特币设置区块上限</strong></p>
+<p>在比特币诞生之初，中本聪并没有限制区块的大小，在其自身数据结构的控制下最大可达到32M。由于区块上限过高造成计算资源浪费，容易发生DDOS攻击，为了保证比特币的稳定性和安全性，中本聪决定临时将区块大小限制在1M。</p>
+<p><strong>2015年5月 扩容迫在眉睫</strong></p>
+<p>BitcoinCore首席开发者Gavin Andreesen提出通过硬分叉的方式进行20MB扩容，并认为提高块大小上限迫在眉睫。</p>
+<p>但Gavin的方案并没有得到开发者和矿工的支持，甚至遭到了强烈的反对。</p>
+<p>由于与BitcoinCore在扩容问题上的分歧，以及错认Craig Steven Wright为中本聪导致名誉受损， Gavin Andreesen被开发组剥夺了代码合并权。</p>
+<p><strong>2015年12月 隔离见证发布</strong></p>
+<p>BitcoinCore发布Segwit方案，通过把签名脚本从区块基本结构中分离出来，短暂缓解主链拥堵问题。由于此方案导致比特币未来很难进行主链扩容并且增加了一些不安全性，遭到了部分开发团队和矿工的反对。</p>
+<p><strong>2016年2月21日 香港共识</strong></p>
+<p>2016年2月21日，占全网70%算力的矿工和Bitcoin core开发者达成的重要共识：隔离见证发布三个月内，先扩容到2兆，Bitcoin Core在发布了一个包含上述硬分叉代码的版本之后，矿工才会在生产环境中运行隔离见证。</p>
+<p>但香港共识最终因为BitcoinCore团队的临时毁约而未能执行。</p>
+<p><strong>2017年3月 Segwit2X</strong></p>
+<p>2017年3月Sergio Demian Lerner提出Segwit2mb（后改名为Segwit2x。主张合并激活Segwit软分叉和2MB硬分叉）。</p>
+<p><strong>2016年4月 区块堵塞</strong></p>
+<p>2016年4月 区块堵塞问题开始显现，交易手续费与确认时间直线上升，甚至有交易因无法进入资金池被退回的情况。</p>
+<p><strong>2017年5月 纽约共识</strong></p>
+<p>2017年5月来自22个国家的58个公司代表聚集在纽约的酒店里参加了一次闭门会议。85%以上算力的矿池在纽约达成协议，开始准备Segwit2x。</p>
+<p>代替Blockstream首席执行官Adam Back参会的繆永权（Samson Mow）因为遭到其他参会人员的抵制被组织者Barry Silbert拦在门外。</p>
+<p>尽管85%以上的算力在链上写NYA表示支持纽约协议，但由于BitcoinCore的反对，Segwit2X方案还是在临近执行时临时宣布终止。</p>
+<p><strong>2017年6月 UAHF方案</strong></p>
+<p>2017年4月，如果Segwit2x未能及时激活，比特大陆联合比特币的开发者提出了UAHF的硬分叉方案。这一方案是，在对比特币原链上的所有数据备份后，该方案取消了隔离见证的升级和1MB区块大小限制，采用动态区块大小，最高限制到8MB。 </p>
+<p><strong>2017年8月1日 比特币现金诞生</strong></p>
+<p>2017年8月1日，BitcoinCash在区块高度478558硬分叉完成，按照比特币1：1分发，总量2100万，删除隔离见证、区块上限升级为8M，坚持链上扩容，解决了旧版比特币系统中手续费高、确认慢、实用性差等问题，履行最初的比特币作为「点对点电子现金」的承诺。</p>
+<p><strong>2017年11月13日 修改难度调整机制</strong></p>
+<p>在东部时间大约下午4点左右，区块高度为504031，比特币现金（BCH）网络成功的进行了硬分叉升级。这次升级修改难度调整算法为响应式难度调整（DAA），旧版本的紧急难度调整（EDA）导致出块紊乱且算力波动极大，DAA将算力难度调整的目标区间为600秒，避免难度和峰值的突然下降。例如，当算力呈指数变化时，网络将迅速进行难度调整，同时避免反馈震荡。</p>
+<p><strong>2017年12月15日，Bitpay支持BCH支付</strong></p>
+<p>全球最大的比特币支付服务商Bitpay宣布支持BCH支付，在支付平台和借记卡中添加BCH支持，所有的支付都将默认为比特币现金，但用户仍然可以选择使用比特币支付。</p>
+<p><strong>2018年1月13日 分叉币CDY诞生</strong></p>
+<p>比特币糖果（BitcoinCandy）于高度512666分叉比特币现金，总量210亿，比例为1BCH=1000CDY。CDY是比特币现金第一个分叉币，在这个新链上探索比特币的量子抗性解决方案。</p>
+<p><strong>2018年1月14日 新地址格式CashAddr</strong></p>
+<p>由于比特币（BTC）与比特币现金（BCH）的地址格式相同，为避免用户转账失误造成损失，减少用户的错误和混淆，BCH开发团队提出了新的地址格式CashAddr。任何遗留的比特币地址格式都将转换为一个并且只有一个CashAddr格式，反之亦然。因此，任何给定地址都有两个版本(legacy和CashAddr)，它们是可以互换的，因为它们对应于同一组私钥和公共密钥。</p>
+<p><strong>2018年5月15日 主链扩容添加操作码</strong></p>
+<p>主链扩容到32MB，添加或重新激活比特币脚本操作码(op代码)，其中包括OP_CAT、OP_AND、OP_OR、OP_XOR、OP_DIV、OP_MOD、OP_SPLIT、OP_NUM2BIN和OP_BIN2NUM。最后，将OP_RETURN数据载体大小增加到220字节。</p>
+<p><strong>2018年9月19日 休斯顿火箭接受BCH赞助</strong></p>
+<p>休斯顿火箭队接受了蚂蚁矿池对其2018-2019赛季的赞助，并使用比特币现金（BCH）支付，成为第一支接受BCH赞助的NBA球队。</p>
+<p><strong>2018年11月15日 交易排序CTOR</strong></p>
+<p>删除拓扑事务处理顺序约束，并强制执行规范事务处理顺序；启用OP_CHECKDATASIG和OP_CHECKDATASIGVERIFY操作码；实施最小交易规模；为scriptSig强制执行“仅推送”规则；实施“清洁堆栈”规则。同时，产生新的分叉币BSV，主要特点是区块上限提高到128M。</p>
+<p><strong>2019年3月17日 Neutrino上线</strong></p>
+<p>Neutrino是由BCH的全节点开发团队BCHD推出的一款SPV钱包，是迄今为止技术最先进的加密货币钱包。其他钱包都会将有关您交易的信息泄露给第三方，但Neutrino使用一种”客户端过滤”的新技术来更好地保护您的隐私。</p>
+<p><strong>2019年3月28日 CashShuffle上线</strong></p>
+<p>CashShuffle服务终于在Electron Cash钱包4.0版本中正式上线。在上线前，它经过了来自专业审计机构KudelskiSec严格的审核以及众多BCH爱好者大量的测试，这一服务的正式上线意味着所有的BCH持有者都可以放心、快捷的使用混币工具进行加密转账了。</p>
+<p><strong>2019年5月15日 Schnorr签名</strong></p>
+<p>Schnorr签名允许非常简单的多方聚合方案，其中多方协作在一个聚合的公钥下，生成一个聚合签名，减少BCH链的存储和带宽，有助于提高用户的隐私保护。允许误发到隔离见证地址的BCH取回。升级过程中有攻击者利用BitcoinABC引入 OP_CHECKDATASIG 时产生的漏洞干扰升级，在各大矿池的迅速反应下成功化解。</p>
+<p><strong>注意</strong></p>
+<hr>
+<p>本文以收集整理为主，<strong>内容尚不完善，持续更新。</strong>如有修改建议及补充，请点击阅读原文提交。本文用于科普比特币现金相关知识、历史，并作为参考材料使用。</p>
+<p> 原文链接：<a href="https://mp.weixin.qq.com/s?__biz=MzI2MzQyNTUxNw==&mid=2247484008&idx=1&sn=1ff1c35f539cb62598ff06c5b076e944&chksm=eabd5eeaddcad7fc0a3ca156f51409df9168507dcf7e01a14b214889fe5a4186af255c0751f2&mpshare=1&scene=1&srcid=12300iBKY2UihJ1hs9HMHifi&sharer_sharetime=1577666155817&sharer_shareid=92bb218609be51fbabe38f2e839b6d4e&key=b520691f745cd3113d13e789927049104edc9caa78229474585746b486ad1a202f6b507a747d8f63b9fad557175a6e691a778dccdb8c13031e747d397c7d5480fd32e22c1efd11ef4a1bad00e23e0766&ascene=1&uin=NjkzODIzNzIw&devicetype=Windows-QQBrowser&version=6103000b&lang=zh_CN&exportkey=AebIlUB06JyRqq7V236Z27A%3D&pass_ticket=aNbZgvLUphmZKZVU48lWG%2BZXG%2BxGNRw5AJYBKHXM8BgsojS2rvCzO3JC2zUmIUD5" target="_blank" rel="noopener">脑洞</a> </p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/BCH/" rel="tag"># BCH</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/08/30/201908301549/" rel="prev" title="江卓尔：科普、挖矿，构建可量化、反脆弱的交易系统">
+                江卓尔：科普、挖矿，构建可量化、反脆弱的交易系统 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments"> 
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/touxiang.jpg"
+                alt="BCHer" />
+            
+              <p class="site-author-name" itemprop="name">BCHer</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        ﻿<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">BCHer</span>
+
+  
+</div>
+<!--
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动
+-->
+</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">
+<!--
+主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4
+
+-->
+</div>
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'Wyx0ixnswAdTW50g6IigFS7w-gzGzoHsz',
+        appKey: 'claLTxtyqG7qT9AbtKQVFvQX',
+        placeholder: 'hi',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+//�����������д���ȥ�� power by valine
+ var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
+
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
